@@ -1,0 +1,1 @@
+This dir contains all the scripts/programs to complete project 'C# - Hello, World'
