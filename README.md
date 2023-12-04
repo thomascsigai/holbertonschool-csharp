@@ -1,0 +1,1 @@
+This repo contains all the folders related to C# project for Holberton School's AR/VR specialization
