@@ -7,6 +7,6 @@ class Program
         string str1 = "Street";
         string str2 = "Mission";
         int int1 = 972;
-        Console.WriteLine(String.Concat(int1.ToString(), " ", str1, " ", str2));
+        Console.WriteLine(String.Concat(int1.ToString(), " ", str2, " ", str1));
     }
 }
