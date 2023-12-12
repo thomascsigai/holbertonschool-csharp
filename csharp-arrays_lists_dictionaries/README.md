@@ -1,0 +1,1 @@
+This dir contains all the scripts/programs to complete project 'C# - Data Structures: Arrays, Lists, Dictionaries'
