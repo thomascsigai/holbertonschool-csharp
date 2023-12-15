@@ -11,7 +11,7 @@ class List
             return myList;
         }
 
-        for (int i = 0; i < length; i++)
+        for (int i = 0; i < myList.Count; i++)
             if (i == index)
                 myList.Remove(myList[i]);
 
