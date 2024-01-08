@@ -5,7 +5,7 @@ namespace Tests
     public class Tests
     {
         [Test]
-        public void SimpleString()
+        public void MultipleWords()
         {
             string str = "thisIsATest";
 
@@ -18,6 +18,22 @@ namespace Tests
             string str = "";
 
             Assert.AreEqual(Text.Str.CamelCase(str), 0);
+        }
+
+        [Test]
+        public void OneWord()
+        {
+            string str = "test";
+
+            Assert.AreEqual(Text.Str.CamelCase(str), 1);
+        }
+
+        [Test]
+        public void TwoWords()
+        {
+            string str = "testTwo";
+
+            Assert.AreEqual(Text.Str.CamelCase(str), 2);
         }
     }
 }
