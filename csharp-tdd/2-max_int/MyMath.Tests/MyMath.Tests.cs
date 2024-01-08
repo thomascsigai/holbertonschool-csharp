@@ -37,5 +37,16 @@ namespace Tests
 
             Assert.AreEqual(result, 0);
         }
+
+        [Test]
+        public void MaxInTheMiddle()
+        {
+            List<int> list = new List<int>() {-3, -2, -1, -4, -5};
+            int result;
+
+            result = MyMath.Operations.Max(list);
+
+            Assert.AreEqual(result, -1);
+        }
     }
 }
