@@ -72,9 +72,9 @@ class Square : Rectangle
             if (value < 0)
                 throw new ArgumentException("Size must be greater than or equal to 0");
             
-            Height = value;
-            Width = value;
-            size = Area();
+            Height = Convert.ToInt32(Math.Sqrt(value));
+            Width = Convert.ToInt32(Math.Sqrt(value));
+            size = value;
         }
     }
 }
