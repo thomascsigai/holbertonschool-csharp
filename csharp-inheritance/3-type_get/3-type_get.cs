@@ -11,8 +11,8 @@ class Obj
     public static void Print(object myObj)
     {
         TypeInfo t = myObj.GetType().GetTypeInfo();
-        IEnumerable<PropertyInfo> pList = t.DeclaredProperties;
-        IEnumerable<MethodInfo> mList = t.DeclaredMethods;
+        IEnumerable<PropertyInfo> pList = t.GetProperties();
+        IEnumerable<MethodInfo> mList = t.GetMethods();
 
         Console.WriteLine($"{myObj.GetType().Name} Properties:");
         
