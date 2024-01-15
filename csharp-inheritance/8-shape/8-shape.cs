@@ -58,7 +58,7 @@ class Rectangle : Shape
     }
 }
 
-///<summary>Defines a Rectangle, inherits from Shape.</summary>
+///<summary>Defines a Square, inherits from Shape.</summary>
 class Square : Rectangle
 {
     private int size;
