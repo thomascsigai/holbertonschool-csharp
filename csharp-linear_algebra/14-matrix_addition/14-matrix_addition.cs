@@ -11,15 +11,15 @@ class MatrixMath
     {
         //Checks if matrixes are same size
         if (matrix1.Length - matrix2.Length != 0)
-            return new double[,] { { -1, -1, -1 }, { -1, -1, -1 }, { -1, -1, -1 } };
+            return new double[,] { { -1 } };
 
         //Checks if matrix1 is 2D or 3D
         if (matrix1.GetLength(0) != 2 && matrix1.GetLength(1) != 2 && matrix1.GetLength(0) != 3 && matrix1.GetLength(1) != 3)
-            return new double[,] { { -1, -1, -1 }, { -1, -1, -1 }, { -1, -1, -1 } };
+            return new double[,] { { -1 } };
 
         //Checks if matrix2 is 2D or 3D
         if (matrix2.GetLength(0) != 2 && matrix2.GetLength(1) != 2 && matrix2.GetLength(0) != 3 && matrix2.GetLength(1) != 3)
-            return new double[,] { { -1, -1, -1 }, { -1, -1, -1 }, { -1, -1, -1 } };
+            return new double[,] { { -1 } };
 
         for (int i = 0; i < matrix1.GetLength(0); i++)
         {
