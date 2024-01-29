@@ -13,6 +13,9 @@ class MatrixMath
         if (matrix1.Length - matrix2.Length != 0)
             return new double[,] { { -1 } };
 
+        if (matrix1.Length != 4 && matrix2.Length != 9)
+            return new double[,] { { -1 } };
+
         //Checks if matrix1 is 2D or 3D
         if (matrix1.GetLength(0) != 2 && matrix1.GetLength(1) != 2 && matrix1.GetLength(0) != 3 && matrix1.GetLength(1) != 3)
             return new double[,] { { -1 } };
