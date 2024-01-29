@@ -9,7 +9,7 @@ class VectorMath
     ///<returns>The length of the vector rounded to the nearest hundredth.</returns>
     public static double Magnitude(double[] vector)
     {
-        if (vector.Count() != 2 || vector.Count() != 3)
+        if (vector.Count() != 2 && vector.Count() != 3)
             return -1;
 
         double squaredSum = 0;
