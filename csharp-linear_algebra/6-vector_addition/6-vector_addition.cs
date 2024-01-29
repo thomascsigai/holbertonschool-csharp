@@ -12,17 +12,17 @@ class VectorMath
     {
         //Checks if vectors are same size
         if (vector1.Count() - vector2.Count() == 0)
-            return -1;
+            return new double[] {-1, -1};
 
         //Checks if vector1 is 2D or 3D
         if (vector1.Count() != 2 && vector2.Count() != 3)
-            return -1;
+            return new double[] {-1, -1};
 
         //Checks if vector2 is 2D or 3D
         if (vector2.Count() != 2 && vector2.Count() != 3)
-            return -1;
+            return new double[] {-1, -1};
 
-        double[] vectorSum = new double[];
+        double[] vectorSum = new double[vector1.Count()];
 
         for (int i = 0; i < vector1.Count(); i++)
         {
