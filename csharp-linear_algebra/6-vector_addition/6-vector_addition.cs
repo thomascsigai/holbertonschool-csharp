@@ -11,7 +11,7 @@ class VectorMath
     public static double[] Add(double[] vector1, double[] vector2)
     {
         //Checks if vectors are same size
-        if (vector1.Count() - vector2.Count() == 0)
+        if (vector1.Count() - vector2.Count() != 0)
             return new double[] {-1, -1};
 
         //Checks if vector1 is 2D or 3D
