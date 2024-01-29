@@ -12,15 +12,15 @@ class VectorMath
     {
         //Checks if vectors are same size
         if (vector1.Count() - vector2.Count() != 0)
-            return new double[] {-1, -1};
+            return -1;
 
         //Checks if vector1 is 2D or 3D
         if (vector1.Count() != 2 && vector2.Count() != 3)
-            return new double[] {-1, -1};
+            return -1;
 
         //Checks if vector2 is 2D or 3D
         if (vector2.Count() != 2 && vector2.Count() != 3)
-            return new double[] {-1, -1};
+            return -1;
 
         double result = 0;
         
