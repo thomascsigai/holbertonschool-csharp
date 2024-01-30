@@ -11,7 +11,7 @@ class MatrixMath
         if (direction != 'x' && direction != 'y')
             return new double[,] { { -1 } };
 
-        if (matrix.Length != 4)
+        if (matrix.Length != 4 || matrix.GetLength(0) != 2)
             return new double[,] { { -1 } };
 
         if (direction == 'x')
