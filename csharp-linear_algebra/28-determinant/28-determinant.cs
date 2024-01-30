@@ -12,13 +12,13 @@ class MatrixMath
             return -1;
 
         if (matrix.Length == 4)
-            return matrix[0, 0] * matrix[1, 1] - matrix[0, 1] * matrix[1, 0];
+            return Math.Round(matrix[0, 0] * matrix[1, 1] - matrix[0, 1] * matrix[1, 0], 2);
         else
-            return matrix[0, 0] * matrix[1, 1] * matrix[2, 2] +
+            return Math.Round(matrix[0, 0] * matrix[1, 1] * matrix[2, 2] +
            matrix[0, 1] * matrix[1, 2] * matrix[2, 0] +
            matrix[0, 2] * matrix[1, 0] * matrix[2, 1] -
            matrix[0, 2] * matrix[1, 1] * matrix[2, 0] -
            matrix[0, 1] * matrix[1, 0] * matrix[2, 2] -
-           matrix[0, 0] * matrix[1, 2] * matrix[2, 1];
+           matrix[0, 0] * matrix[1, 2] * matrix[2, 1], 2);
     }
 }
