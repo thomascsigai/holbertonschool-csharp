@@ -12,7 +12,7 @@ class MatrixMath
             return new double[,] { { -1 } };
 
         if (matrix.Length != 4)
-            return -1;
+            return new double[,] { { -1 } };
 
         if (direction == 'x')
             shearMat[0, 1] = factor;
