@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Program
+class MatrixMath
 {
     public static double[,] Inverse2D(double[,] matrix)
     {
@@ -18,14 +18,14 @@ class Program
 
         if (determinant == 0)
         {
-            return [-1];
+            return new double[,] {{-1}};
         }
 
         double[,] matrixInverse = new double[2, 2];
-        matrixInverse[0, 0] = d / determinant;
-        matrixInverse[0, 1] = -b / determinant;
-        matrixInverse[1, 0] = -c / determinant;
-        matrixInverse[1, 1] = a / determinant;
+        matrixInverse[0, 0] = Math.Round(d / determinant, 2);
+        matrixInverse[0, 1] = Math.Round(-b / determinant, 2);
+        matrixInverse[1, 0] = Math.Round(-c / determinant, 2);
+        matrixInverse[1, 1] = Math.Round(a / determinant, 2);
 
         return matrixInverse;
     }
