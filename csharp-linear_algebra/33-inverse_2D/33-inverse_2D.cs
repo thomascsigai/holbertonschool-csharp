@@ -6,7 +6,7 @@ class MatrixMath
     {
         if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
         {
-            throw new ArgumentException("La matrix doit être 2x2.");
+            return new double[,] {{-1}};
         }
 
         double a = matrix[0, 0];
