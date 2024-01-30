@@ -13,7 +13,7 @@ class MatrixMath
         {
             for (int j = 0; j < matrix.GetLength(0); j++)
             {
-                tMat[j, i] = matrix[i, j];
+                tMat[i, j] = matrix[j, i];
             }
         }
 
