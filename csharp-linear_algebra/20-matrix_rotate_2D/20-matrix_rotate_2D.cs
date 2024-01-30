@@ -20,11 +20,8 @@ class MatrixMath
 
         for (int i = 0; i < rows; i++)
         {
-            for (int j = 0; j < cols; j++)
-            {
-                // Appliquer la rotation à chaque élément
-                rotatedMatrix[i, j] = Math.Round(matrix[i, j] * Math.Cos(angle) - matrix[j, i] * Math.Sin(angle), 2);
-            }
+            rotatedMatrix[i, 0] = Math.Round(matrix[i, 0] * Math.Cos(angle) - matrix[i, 1] * Math.Sin(angle), 2);
+            rotatedMatrix[i, 1] = Math.Round(matrix[i, 0] * Math.Sin(angle) + matrix[i, 1] * Math.Cos(angle), 2);
         }
 
         return rotatedMatrix;
