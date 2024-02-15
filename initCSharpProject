@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 <project_name>"
+    exit 1
+fi
+
+project_name=$1
+
+mkdir "$project_name"
+
+(
+    cd "$project_name" || exit
+
+    # Create a new console application
+    dotnet new console
+
+    # Rename Program.cs to $1.cs
+    mv Program.cs "$project_name.cs"
+
+    # Create a new file with the first character of the project name followed by "-main.cs"
+    touch "${project_name:0:1}-main.cs"
+
+    # Edit $1.csproj and add the specified line at line 7
+    sed -i '7i\\t\t<DocumentationFile>bin\\$(Configuration)\\$(TargetFramework)\\$(AssemblyName).xml</DocumentationFile>' "$project_name.csproj"
+
+    # Remove unnecessary lines from $1.cs
+    sed -i '3d;4d;12d' "$project_name.cs"
+    sed -i '3,9 s/^    //' "$project_name.cs"
+)
