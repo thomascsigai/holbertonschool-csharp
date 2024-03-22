@@ -1,7 +1,6 @@
 # Holberton School - C#
 
-![Holberton School - C#](https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.dyma.fr%2Fcsharp%2F&psig=AOvVaw0bfNhPYx6Utu7RW9qApLXU&ust=1711205498056000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJCmsLGPiIUDFQAAAAAdAAAAABAE)
-
+![Holberton School - C#](https://blog.dyma.fr/content/images/2023/05/csharp1200x628.png)
 ## 📝 Description
 The "Holberton School - C#" project is a comprehensive repository designed to showcase a variety of C# projects and exercises undertaken as part of the Holberton School curriculum. This repository serves as both a personal portfolio for the developer and a resource for other students or professionals interested in learning C# through practical examples. Key features of this project include foundational C# exercises, advanced programming concepts, and real-world applications demonstrating the versatility and power of the C# language.
 
