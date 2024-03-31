@@ -42,5 +42,3 @@ A detailed list of tasks and projects contained within the repository, each demo
 
 ## 📬 Contact
 - LinkedIn Profile: [Thomas Csigai](https://www.linkedin.com/in/thomas-csigai-9a36a61b6/)
-
-Please make sure to replace the placeholder URL with the actual URL where the image is hosted before including it in the README file on GitHub.
