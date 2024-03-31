@@ -1,7 +1,5 @@
 # C# Generics Implementation
 
-![C# Generics Implementation](/path/to/image "C# Generics Implementation")
-
 ## 📝 Description
 In this project, "C# Generics Implementation," we delve into creating a generic Queue in C# using a singly linked list, emphasizing the principles of generics while strictly avoiding the use of `System.Collections` or `System.Collections.Generic`. This hands-on approach not only solidifies the understanding of generics in C# but also enhances our grasp of data structures, access modifiers, and the intricacies of covariance and contravariance, equipping learners with the skills to implement efficient and type-safe collections.
 
