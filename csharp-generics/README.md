@@ -12,12 +12,12 @@ In this project, "C# Generics Implementation," we delve into creating a generic 
 - [Access Modifiers (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
 - [Covariance and Contravariance in Generics](https://docs.microsoft.com/en-us/dotnet/standard/generics/covariance-and-contravariance)
 
-## 🛠️ Technologies and Outils Utilisés
+## 🛠️ Technologies and Tools Used
 - **C#**: Chosen for its powerful support for generics, allowing for type-safe data structures.
 - **.NET Core**: Used for building and running C# applications across platforms.
 - **Visual Studio Code**: Preferred editor for its rich ecosystem of C# development tools and extensions.
 
-## 📋 Prérequis
+## 📋 Prerequisites
 - .NET SDK (Version 5.0 or later)
 - Visual Studio Code or any C# IDE
 
